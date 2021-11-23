@@ -1,4 +1,3 @@
-import {Author} from "./author.model";
 import {Subjects} from "../../category/subjects.type";
 import {Languages} from "./languages.type";
 import {Authors} from "./authors.type";
@@ -10,7 +9,7 @@ export class Book {
   authors: Authors = [];
   bookshelves: Bookshelves = [];
   download_count: number = 0;
-  formats: { [key: string]: string } = {};
+  formats: Formats = {};
   languages: Languages = [];
   media_type: string = "";
   subjects: Subjects = [];

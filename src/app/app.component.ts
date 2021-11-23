@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {style} from "@angular/animations";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bookshelf';
+  public title: string = 'bookshelf';
+  public selectedSubject: string = 'Select subject';
+
+  public defaultDogName: string = 'Morka';
+  public dogNames: string[] = ['Alfred', 'Fredrik', 'Tobis'];
+
+  changeDefaultValue() {
+    this.defaultDogName = this.dogNames[Math.floor(Math.random() * this.dogNames.length)];
+    this.dogNames = [...this.dogNames];
+  }
 }

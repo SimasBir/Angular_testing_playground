@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  dogApiUrl: 'https://api.thedogapi.com/v1/images/search',
+  apiUrl: 'http://localhost:3010'
 };
 
 /*
